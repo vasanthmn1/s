@@ -10,20 +10,25 @@ const useFlipbookSize = () => {
   useEffect(() => {
     const updateSize = () => {
       const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
 
       const isMobile = screenWidth < 768;
 
       let width;
+      let height;
 
       if (isMobile) {
-        // 📱 Mobile → single page
-        width = screenWidth * 0.95;
+        // 📱 MOBILE → FULL SCREEN
+        console.log(screenWidth);
+        console.log(screenHeight);
+        
+        width = screenWidth;     // 100vw
+        height = screenHeight;   // 100vh
       } else {
-        // 💻 Desktop → book mode
+        // 💻 DESKTOP → keep your logic
         width = Math.min(screenWidth * 0.9, 1300);
+        height = width * 1.15;
       }
-
-      const height = width * 1.15; // keep ratio
 
       setSize({ width, height, isMobile });
     };
@@ -36,4 +41,5 @@ const useFlipbookSize = () => {
 
   return size;
 };
+
 export default useFlipbookSize;
