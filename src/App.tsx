@@ -12,6 +12,8 @@ import page2Image from './assets/image/page-2-left.svg';
 
 import HeartBlink from './component/HeartBlink';
 import WeddingPopup from './component/WeddingPopup';
+import useResponsiveWidth from './hooks/useResponsiveWidthHook';
+import useFlipbookSize from './hooks/useFlipbookSizeHook';
 
 type BookMode = 'portrait' | 'landscape';
 
@@ -88,7 +90,7 @@ function App() {
     window.innerWidth <= 768 ? 'portrait' : 'landscape'
   ));
   const [fitScale, setFitScale] = useState(1);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [activeBookWidth, setActiveBookWidth] = useState(940);
   const [isRsvpConfirmed, setIsRsvpConfirmed] = useState(false);
@@ -196,6 +198,8 @@ function App() {
     audio.muted = true;
     setIsMuted(true);
   };
+const { width, height, isMobile } = useFlipbookSize();
+
 
   return (
     <main className="app-shell">
@@ -226,19 +230,20 @@ function App() {
             <HTMLFlipBook
               ref={bookRef}
               style={{}}
-         width={bookMode === 'portrait' ? 900 : 1300}
-maxWidth={bookMode === 'portrait' ? 900 : 1300}
-              height={1700}
+         width={width}
+
+                height={height}
               startPage={0}
               size="fixed"
-              minWidth={315}
-             
-              minHeight={420}
-              maxHeight={1700}
+       
+  minWidth={320}
+  maxWidth={1600}
+  minHeight={420}
+  maxHeight={2000}
               startZIndex={0}
               showCover
-              autoSize
-              usePortrait={bookMode === 'portrait'}
+              autoSize={false}
+              usePortrait={isMobile}
               useMouseEvents
               drawShadow={false}
               maxShadowOpacity={0.28}

@@ -81,12 +81,11 @@ figure {
 }
 
 .app-shell {
-  height: 100dvh;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  justify-items: center;
-  padding: 18px;
-  gap: 14px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden; 
 }
 
 .audio-toggle {
@@ -174,7 +173,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -197,13 +196,14 @@ figure {
 
 .flip-book-shell {
   position: relative;
-  width: calc(var(--active-book-width, 940px) * var(--fit-scale, 1));
-  height: calc(var(--book-h) * var(--fit-scale, 1));
+  width: 100%;
+  max-width: 1300px; 
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   cursor: pointer;
+  overflow: visible;
 }
 
 .flip-book-scale {
@@ -715,10 +715,15 @@ justify-content: space-between;
   }
 
   .book-viewport {
-    overflow: visible;
-    align-items: center;
-    padding: 10px;
-    border-radius: 18px;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 100vw; /* 🔥 important */
+  padding: 10px; /* reduce padding */
   }
 
   .flip-book-shell {
