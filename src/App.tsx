@@ -12,7 +12,7 @@ import page2Image from './assets/image/page-2-left.svg';
 
 import HeartBlink from './component/HeartBlink';
 import WeddingPopup from './component/WeddingPopup';
-import useResponsiveWidth from './hooks/useResponsiveWidthHook';
+
 import useFlipbookSize from './hooks/useFlipbookSizeHook';
 
 type BookMode = 'portrait' | 'landscape';
