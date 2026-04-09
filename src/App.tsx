@@ -97,7 +97,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [activeBookWidth, setActiveBookWidth] = useState(940);
-  const [isRsvpConfirmed, setIsRsvpConfirmed] = useState(false);
+  // const [isRsvpConfirmed, setIsRsvpConfirmed] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
@@ -144,11 +144,7 @@ function App() {
 
   
 
-  const rsvpButtonLabel = isRsvpConfirmed ? 'Presence Confirmee' : 'Confirmer Ma Presence';
-  const rsvpStatusLabel = isRsvpConfirmed
-    ? 'Merci, votre presence est bien enregistree.'
-    : 'Appuyez sur le bouton pour confirmer votre presence.';
-
+ 
   const bookShellStyle = {
     ['--active-book-width' as string]: `${activeBookWidth}px`,
     ['--fit-scale' as string]: String(fitScale)
