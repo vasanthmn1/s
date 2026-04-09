@@ -4,8 +4,7 @@ import HTMLFlipBook from 'react-pageflip';
 import { PiSpeakerSimpleHighFill, PiSpeakerSimpleSlashFill } from 'react-icons/pi';
 import backgroundMusic from './assets/audio/music.mpeg?url';
 import page1Image from './assets/image/page-1-image.png';
-// import page2LeftImage from './assets/image/page-2-leftside-image.png';
-import page2RightImage from './assets/image/page-2rightSide-image-1.png';
+
 import churchImage from './assets/image/page-3-image-2.png';
 import hallImage from './assets/image/page-3-image-3.png';
 import hallImageHover from './assets/image/page-3-image-3-hover.png';
