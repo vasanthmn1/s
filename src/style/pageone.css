@@ -2,13 +2,14 @@
 .p1-heading {
   border-top: 1px solid #0000008d;
   border-bottom: 1px solid #0000008d;
-padding: 20px 0px;
+
 }
 .masthead h1 {
   font-family: 'OldEnglish', serif;
   font-weight: 400;
   font-size: 88px;
   line-height: 0.96;
+  padding: 18px;
 }
 
 .hero-block {
@@ -46,7 +47,7 @@ padding: 20px 0px;
 }
 
 .hero-photo {
-  height: 580px;
+  /* height: 580px; */
 }
 
 .rounded-photo img {
@@ -60,7 +61,7 @@ padding: 20px 0px;
 .save-date-block {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+ 
 }
 
 .save-date-title,
@@ -69,11 +70,18 @@ padding: 20px 0px;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
+.date-row {
+display: flex;
+justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
 
 .save-date-title {
   font-family: 'DM Serif Display', serif;
   font-size: 74px;
   line-height: 0.9;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -103,36 +111,51 @@ font-weight: 800;
   text-align: center;
 }
 
-.heart-pair {
+.heart-pair p {
   font-size: 28px;
   letter-spacing: 4px;
 }
 
 @media (max-width: 768px) {
+
+
+  
   .masthead h1 {
-    font-size: 42px;
+    font-size:25px;
+    padding: 15px;
   }
 
   .hero-names {
-    font-size: 42px;
+    font-size:33px;
   }
-
+.masthead-meta span{
+  margin-top: 4px;
+  font-size: 8px;
+}
   .headline-script {
     gap: 12px;
     font-size: 28px;
   }
  /* font-family: 'PT Serif', serif; */
   .headline-script p {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .hero-photo {
     height: auto;
   }
-
+ .save-date-title{
+  padding: 5px 0px;
+ }
   .save-date-title,
   .save-date-title span {
-    font-size: 40px;
+    font-size: 30px;
+  line-height: 0.2;
+
+  }
+  .save-date-title .the{
+    font-size: 20px !important;
+  
   }
 
   .save-date-title strong {
@@ -141,14 +164,18 @@ font-weight: 800;
   }
 
   .date-row {
-    grid-template-columns: auto 1fr auto;
-    gap: 8px;
-    padding: 14px 0;
+    display: flex;
+justify-content: space-between;
+   
+    padding: 5px 0;
     font-size: 17px;
     letter-spacing: 0.12em;
+      border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
   }
 
-  .heart-pair {
-    font-size: 18px;
+  .date-row p {
+    word-spacing: 3px;
+    font-size: 15px !important;
   }
 }

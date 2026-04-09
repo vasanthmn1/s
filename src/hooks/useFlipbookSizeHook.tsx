@@ -23,7 +23,8 @@ const useFlipbookSize = () => {
         console.log(screenHeight);
         
         width = screenWidth;     // 100vw
-        height = screenHeight;   // 100vh
+        // height = screenHeight;   // 100vh
+        height = width * (2000 / 1415) * 1.05;
       } else {
         // 💻 DESKTOP → keep your logic
         width = Math.min(screenWidth * 0.9, 1300);

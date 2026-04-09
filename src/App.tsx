@@ -8,6 +8,11 @@ import page1Image from './assets/image/page-1-image.png';
 import page2RightImage from './assets/image/page-2rightSide-image-1.png';
 import churchImage from './assets/image/page-3-image-2.png';
 import hallImage from './assets/image/page-3-image-3.png';
+import hallImageHover from './assets/image/page-3-image-3-hover.png';
+import churchImageHover from './assets/image/page-3-image-2-hover.png';
+import BirdImage from './assets/image/page-3image-3.png';
+import BirdImageHover from './assets/image/page-3image-3 hover.png';
+
 import page2Image from './assets/image/page-2-left.svg';
 
 import HeartBlink from './component/HeartBlink';
@@ -267,7 +272,7 @@ const { width, height, isMobile } = useFlipbookSize();
                 setBookMode(event.data as BookMode);
               }}
             >
-              <BookPage id="page1" className="content page front-page cover-page">
+              <BookPage id="page1" className="content page  cover-page">
                 <header className="top-strip">
 <div></div>
                   <AudioToggle
@@ -285,7 +290,7 @@ const { width, height, isMobile } = useFlipbookSize();
                   <h1 className="old-english-font text-center ">The Wedding Time</h1>
                   <div className="masthead-meta">
                     <span>Perfect Match Edition No 3104</span>
-                    <span>27/06/2026, Friday</span>
+                    <span>27/06/2026</span>
                   </div>
                 </header>
 
@@ -309,13 +314,13 @@ const { width, height, isMobile } = useFlipbookSize();
                 <section className="save-date-block">
                   <div className="save-date-title">
                     <span>SAVE</span>
-                    <strong>THE</strong>
+                    <strong className='the'>THE</strong>
                     <span>DATE</span>
                   </div>
                   <div className="date-row">
-                    <span className="heart-pair"> <HeartBlink/></span>
+                    <div className="heart-pair"> <HeartBlink/></div>
                     <p>SAMEDI, 27 JUIN 2026</p>
-                    <span className="heart-pair"> <HeartBlink/></span>
+                    <div className="heart-pair"> <HeartBlink/></div>
                   </div>
                 </section>
               </BookPage>
@@ -335,8 +340,8 @@ const { width, height, isMobile } = useFlipbookSize();
                 <header className="inside-header">
                   <div className="meta-row-page-2">
                     <span>Perfect Match Edition No 3104</span>
-                    <h2 className="old-english-font">L’évenement</h2>
-                    <span>27/06/2026, Friday</span>
+                    <h2 className="he">L’évenement</h2>
+                    <span>27/06/2026</span>
                   </div>
                 </header>
 
@@ -345,47 +350,48 @@ const { width, height, isMobile } = useFlipbookSize();
                 <h3 className="mega-title-1-p2 py-2">LE MATCH PARFAIT</h3>
                 <h3 className="mega-title-2-p2 py-2">Stéphanie et Mohamed se marient</h3>
 
-<div className="row p2-row py-5">
-  <div className="col-lg-6">
+<div className="custom-row p2-row py-1 py-sm-5">
+  <div className="custom-col-6">
 <div className="row">
  
- <div className="col-lg-12">
-    <h3 className='p2-row-heading'>leurs <br /> différences les <br /> ont réunis et l’amour les  unit. </h3>
+ <div className="custom-col-12">
+    <h3 className='p2-row-heading'>leurs <br /> différences les <br /> ont réunis et <br />l’amour les  unit. </h3>
   </div>
-  <div className="col-lg-12 p2-content-box-left py-3">
+  <div className="custom-col-12 p2-content-box-left py-3">
     <h4 className='py-4'>Le Match d'une Vie</h4>
     <p>
       Après plusieurs saisons jouées en parfaite harmonie, Stéphanie et Mohamed ont décidé de disputer le match de leur vie. Portés par l’amour, le respect et la tolérance, ils vous invitent à partager cet événement unique et à célébrer avec eux une victoire pleine de bonheur.
     </p>
   </div>
   <hr />
-    <div className="col-lg-12 p2-content-box-left py-3">
-    <h4 className='py-4'>Le Match d'une Vie</h4>
+    <div className="custom-col-12 p2-content-box-left py-3">
+    <h4 className='py-4'>Une Promesse</h4>
     <p>
-      Après plusieurs saisons jouées en parfaite harmonie, Stéphanie et Mohamed ont décidé de disputer le match de leur vie. Portés par l’amour, le respect et la tolérance, ils vous invitent à partager cet événement unique et à célébrer avec eux une victoire pleine de bonheur.
+     Deux cultures, un « OUI » qui n'a pas de frontière.
+Ce 27 juin 2026, lorsque Stéphanie et Mohamed se diront oui, ce sera bien plus qu'une promesse entre deux personnes. Ce sera le geste fondateur d'une maison nouvelle, construite sur deux fondations distinctes, et d'autant plus solide pour cela.
     </p>
   </div> 
 </div>
   </div>
-  <div className="col-lg-6">
+  <div className="custom-col-6">
 <div className="row p2-content-right">
   <div className="col-lg-12">
     <div className='img-container'>
   <img src={page2Image} alt="" />
 </div>
   </div>
-  <div className="col-lg-12 pt-3">
+  <div className="custom-col-12 pt-3">
     <h4 className='head'>
       REMERCIEMENTS : <br />
-QUAND LES RACINES DONNENT DES AILES
+QUAND LES RACINES <br /> DONNENT DES AILES
     </h4>
   </div>
-  <div className="col-lg-12">
+  <div className="custom-col-12">
     <p className='p2-right-para-1 py-3'>
       On dit souvent que pour bien s’aimer, il faut avoir reçu beaucoup d'amour. Aujourd'hui, les futurs mariés tiennent à dire à leurs parents un "MERCI" pour leur amour et leur précieuse bénédiction.
     </p>
   </div>
-    <div className="col-lg-12">
+    <div className="custom-col-12">
     <p className='p2-right-para-2 py-2'>
      Merci à Mme Antonia SAVERIMUTHU IGNATIUS et à la tendre mémoire de
 M. Philip Yogarajah SAVERIMUTHU.
@@ -393,11 +399,11 @@ Merci à  Mme Sira HAIDARA BAH et
 M. Cheick Chérif HAIDARA.
     </p>
   </div>
-  <div className="col-lg-12  p2-right-para-3 py-3">
+  <div className="custom-col-12  p2-right-para-3 py-3">
 <p>
     C’est dans cette joie que les parents vous convient à l’union de leurs enfants : 
   </p>  </div>
-  <div className="col-lg-12 text-center p2-right-para-4 ">
+  <div className="custom-col-12 text-center p2-right-para-4 ">
     Stéphanie et Mohamed
   </div>
 </div>
@@ -429,11 +435,14 @@ M. Cheick Chérif HAIDARA.
 
                 <div className="double-rule-page-2"></div>
 
-                <h3 className="p3-mega-title">l’ INVITATION Au Grand jour</h3>
+                <h3 className="p3-mega-title">l’ INVITATION <br /> Au Grand jour</h3>
 
-                <section className="event-grid">
+               <div className="event-grip-main">
+                 <section className="event-grid">
                   <div className="event-card left-card">
-                    <img className="venue-illustration church-illustration" src={churchImage} alt="Illustration de l'eglise" />
+                    <img className="venue-illustration church-illustration normal" src={churchImage} alt="Illustration de l'eglise" />
+                    <img className="venue-illustration church-illustration event-img-hover " src={churchImageHover} alt="Illustration de l'eglise" />
+
                     <h4>Celebration Religieuse</h4>
                     <p className="event-time">15H00</p>
                     <p>PAROISSE</p>
@@ -448,51 +457,60 @@ M. Cheick Chérif HAIDARA.
                     <p>SALLE LE LUXURY</p>
                     <p>27, AVENUE DE MEAUX</p>
                     <p>77240 POINCY</p>
-                    <img className="venue-illustration hall-illustration" src={hallImage} alt="Illustration de la salle de reception" />
+                    <img className="venue-illustration hall-illustration normal" src={hallImage} alt="Illustration de la salle de reception" />
+                    <img className="venue-illustration hall-illustration event-img-hover " src={hallImageHover} alt="Illustration de la salle de reception" />
                   </div>
                 </section>
-
+               </div>
                 <section className="reply-row">
                   <p>Reponse souhaitee avant le 10 mai 2026</p>
                   <button
-                    className={`rsvp-chip${isRsvpConfirmed ? ' is-confirmed' : ''}`}
+                    className={`rsvp-chip`}
                     type="button"
-                    onClick={() => setIsRsvpConfirmed((current) => !current)}
-                    aria-pressed={isRsvpConfirmed}
+                    // onClick={() => setIsRsvpConfirmed((current) => !current)}
+                    // aria-pressed={isRsvpConfirmed}
                   >
-                    {rsvpButtonLabel}
+                  Confirmer Ma Présence
                   </button>
                 </section>
 
-                <p className="rsvp-status" aria-live="polite">{rsvpStatusLabel}</p>
+
 
                 <div className="section-rule"></div>
 
-                <section className="bottom-grid">
-                  <div className="calendar-card">
-                    <h4>THE BIG DAY JUNE 2026</h4>
-                    <div className="calendar-weekdays">
-                      <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
-                    </div>
-                    <div className="calendar-days">
-                      {calendarDays.map((day, index) => (
-                        <span key={`${day || 'empty'}-${index}`} className={day === '27' ? 'circled' : undefined}>
-                          {day}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+       <div className="p3-bottom-area">
+  <section className="closing-grid">
 
-                  <div className="symbol-column">
-                    <figure className="article-photo wide-photo">
-                      <img src={page2RightImage} alt="Portrait du couple en exterieur" />
-                    </figure>
-                    <section className="story-section no-gap">
-                      <h5>L&apos;ENVOL : UN SYMBOLE DE FIDELITE ETERNELLE</h5>
-                      <p>Comme ces deux colombes portant leurs alliances vers le meme horizon, Stephanie et Mohamed unissent leurs destins. Ce symbole de paix et d&apos;harmonie illustre la promesse d&apos;un amour d&apos;une loyaute inebranlable sans fin.</p>
-                    </section>
-                  </div>
-                </section>
+    {/* LEFT IMAGE */}
+    <div className="illustration-feature">
+      <figure className="rings-photo">
+        <img
+          className='bird-img-normal'
+
+          src={BirdImage}
+          alt="Illustration de colombes et alliances"
+        />
+          <img
+          className='bird-img-hover'
+          src={BirdImageHover}
+          alt="Illustration de colombes et alliances"
+        />
+      </figure>
+    </div>
+
+    {/* RIGHT CONTENT */}
+    <div className="closing-content">
+      <h3 className="closing-title">
+        LE PETIT MOT DES MARIÉS:
+      </h3>
+
+      <p className="closing-text">
+        “Nous nous sommes trouvés, puis choisis. Année après année, l’évidence s’est installée. Aujourd’hui, nous faisons le choix de nous dire oui. Et c’est entourés de ceux qui comptent le plus, que nous souhaitons célébrer ce moment.”z
+      </p>
+    </div>
+
+  </section>
+</div>
               </BookPage>
 
               {/* <BookPage id="page4" className="content page invitation-page page-four spread-page spread-left back-page">
