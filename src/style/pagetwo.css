@@ -37,11 +37,13 @@ padding: 50px 0px;
 line-height:70px;
 }
 .p2-content-box-left{
+  padding: 30px 0px;
       font-family: 'PT Serif', serif ;
 
 }
 .p2-content-box-left h4{
   font-size:35px;
+  padding: 30px 0px;
       font-family: 'PT Serif', serif ;
  text-transform: uppercase; 
 
@@ -68,7 +70,7 @@ font-family: "EB Garamond", serif;
 .p2-content-right .head{
   margin-top: 20px;
       font-family: 'PT Serif', serif ;
-      font-size: 30px;
+      font-size: 45px;
       font-weight: 400;
    /* font-family: "EB Garamond", serif; */
 
@@ -77,24 +79,32 @@ font-family: "EB Garamond", serif;
    font-family: "EB Garamond", serif;
 font-weight: 400;
 font-size: 23px;
+padding: 30px 0px;
 }
 
 .p2-right-para-2{
    font-family: "EB Garamond", serif;
 font-weight: 400;
 font-size: 23px;
+padding: 20px 0px;
+}
+.p2-right-para-3{
+  padding: 30px 0px;
 }
 .p2-right-para-3 p{
    font-family: "EB Garamond", serif;
    font-weight: bold;
    font-size: 24px;
-  
 }
+
 .p2-right-para-4{
    font-family: "EB Garamond", serif;
 font-style: italic;
 font-weight: 700;
 font-size: 30px;
+}
+.border-top{
+  border-top: 1px solid #000000;
 }
 
 /* 
@@ -196,11 +206,12 @@ padding: 0px 0px;
 }
 .p2-row .p2-row-heading{
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
-  font-size: 10px;
-  margin-top: 40px;
- text-transform: uppercase; 
+
+  font-size: 19px;
+  margin-top: 10px;
+
 line-height:unset;
+
 }
 .mega-title-1-p2{
   font-family: 'DM Serif Display', serif;
@@ -228,5 +239,62 @@ line-height:unset;
   object-fit: cover;     
   object-position: center; 
   display: block;       
+}
+
+.p2-content-box-left{
+  padding: 10px;
+
+}
+
+.p2-content-box-left h4{
+  font-size:15px;
+  padding: 5px 0px !important;
+
+      font-family: 'PT Serif', serif ;
+ text-transform: uppercase; 
+
+}
+.p2-content-box-left p{
+  font-size: 9px;
+font-family: "EB Garamond", serif;
+  
+}
+
+.p2-content-right .head{
+  margin-top: 0px;
+      font-family: 'PT Serif', serif ;
+      font-size: 14px;
+      font-weight: 400;
+  
+}
+
+.p2-right-para-1{
+   font-family: "EB Garamond", serif;
+font-weight: 400;
+font-size: 9px;
+padding: 8px 0px;
+}
+
+.p2-right-para-2{
+   font-family: "EB Garamond", serif;
+font-weight: 400;
+font-size: 9px;
+padding: 0px 0px;
+}
+.p2-right-para-3{
+  padding: 10px 10px !important;
+  /* padding: 10px 0px; */
+}
+.p2-right-para-3 p{
+   font-family: "EB Garamond", serif;
+   font-weight: bold;
+   font-size: 9px;
+  
+}
+.p2-right-para-4{
+   font-family: "EB Garamond", serif;
+font-style: italic;
+font-weight: 700;
+font-size: 10px;
 }
 }

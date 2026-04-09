@@ -356,15 +356,15 @@ const { width, height, isMobile } = useFlipbookSize();
  <div className="custom-col-12">
     <h3 className='p2-row-heading'>leurs <br /> différences les <br /> ont réunis et <br />l’amour les  unit. </h3>
   </div>
-  <div className="custom-col-12 p2-content-box-left py-3">
-    <h4 className='py-4'>Le Match d'une Vie</h4>
+  <div className="custom-col-12 p2-content-box-left ">
+    <h4 className='he'>Le Match d'une Vie</h4>
     <p>
       Après plusieurs saisons jouées en parfaite harmonie, Stéphanie et Mohamed ont décidé de disputer le match de leur vie. Portés par l’amour, le respect et la tolérance, ils vous invitent à partager cet événement unique et à célébrer avec eux une victoire pleine de bonheur.
     </p>
   </div>
-  <hr />
-    <div className="custom-col-12 p2-content-box-left py-3">
-    <h4 className='py-4'>Une Promesse</h4>
+ 
+    <div className="custom-col-12 p2-content-box-left border-top ">
+    <h4 className='he'>Une Promesse</h4>
     <p>
      Deux cultures, un « OUI » qui n'a pas de frontière.
 Ce 27 juin 2026, lorsque Stéphanie et Mohamed se diront oui, ce sera bien plus qu'une promesse entre deux personnes. Ce sera le geste fondateur d'une maison nouvelle, construite sur deux fondations distinctes, et d'autant plus solide pour cela.
@@ -386,19 +386,19 @@ QUAND LES RACINES <br /> DONNENT DES AILES
     </h4>
   </div>
   <div className="custom-col-12">
-    <p className='p2-right-para-1 py-3'>
+    <p className='p2-right-para-1 '>
       On dit souvent que pour bien s’aimer, il faut avoir reçu beaucoup d'amour. Aujourd'hui, les futurs mariés tiennent à dire à leurs parents un "MERCI" pour leur amour et leur précieuse bénédiction.
     </p>
   </div>
     <div className="custom-col-12">
-    <p className='p2-right-para-2 py-2'>
+    <p className='p2-right-para-2 '>
      Merci à Mme Antonia SAVERIMUTHU IGNATIUS et à la tendre mémoire de
 M. Philip Yogarajah SAVERIMUTHU.
 Merci à  Mme Sira HAIDARA BAH et 
 M. Cheick Chérif HAIDARA.
     </p>
   </div>
-  <div className="custom-col-12  p2-right-para-3 py-3">
+  <div className="custom-col-12  p2-right-para-3 ">
 <p>
     C’est dans cette joie que les parents vous convient à l’union de leurs enfants : 
   </p>  </div>
